@@ -1,0 +1,7 @@
+.card.card-info
+  .card-header
+    %h3.card-title= <%= class_name %>.model_name.human.to_s
+  .card-body
+    = render 'form'
+  .card-footer
+    = link_to t('back'), admin_<%= plural_name %>_path

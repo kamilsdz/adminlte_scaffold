@@ -1,0 +1,4 @@
+= simple_form_for([:admin, @<%= singular_name %>]) do |form| <% editable_attributes.each do |attribute| %>
+  = form.input :<%= attribute.name %> <% end -%>
+  
+  = form.button :submit
