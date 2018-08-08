@@ -2,9 +2,12 @@
 
 module Admin
   class <%= controller_class_name %>Controller < BaseController
+    decorates_assigned :<%= singular_name %>
+    decorates_assigned :<%= plural_name %>, with: <%= class_name %>Decorator
+
     def index
-      collection = <%= class_name %>
-      @<%= plural_name %> = <%= class_name %>Decorator.decorate_collection collection.page(params[:page])
+      @q = <%= class_name %>.ransack(params[:q])
+      @<%= plural_name %> = @q.result.page(params[:page])
       @decorator_class = <%= class_name %>Decorator
     end
     

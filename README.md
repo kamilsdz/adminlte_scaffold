@@ -1,28 +1,31 @@
 # AdminlteScaffold
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/adminlte_scaffold`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+AdminLTE generator for Rails generate basic CRUD for model, based on AdminLTE template, Gettext, rspec, FactoryBot, draper, haml, ransack, kaminari.
+It creates controller, view, basic specs and decorator.
+Used namespace: 'Admin'
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'adminlte_scaffold'
+gem 'adminlte_scaffold', git: 'https://github.com/kamilsdz/adminlte_scaffold.git'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install adminlte_scaffold
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+rails generate adminlte_scaffold:controller model_name
+```
+
+## TODO
+
+Add installer for AdminLTE layout with dependencies.
 
 ## Development
 

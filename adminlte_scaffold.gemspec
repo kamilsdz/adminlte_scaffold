@@ -32,4 +32,14 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_dependency 'draper'
+  spec.add_dependency 'kaminari'
+  spec.add_dependency 'font-awesome-rails'
+  spec.add_dependency 'gettext'
+  spec.add_dependency 'gettext_i18n_rails'
+  spec.add_dependency 'haml-rails'
+  spec.add_dependency 'bootstrap'
+  spec.add_dependency 'ransack'
+  spec.add_dependency 'ruby_parser'
 end
+

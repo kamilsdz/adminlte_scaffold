@@ -8,7 +8,8 @@
           %th= <%= class_name %>.human_attribute_name(:<%= attribute.name %>)
         %tr
           %td= @<%= singular_name %>.<%= attribute.name %>
-          <% end -%>
+      <% end -%>
+
   .card-footer
-    = link_to t('edit'), edit_admin_<%= singular_name %>_path(@<%= singular_name %>)
-    = link_to t('back'), admin_<%= plural_name %>_path
+    = link_to _('Edit'), edit_admin_<%= singular_name %>_path(@<%= singular_name %>)
+    = link_to _('Back'), admin_<%= plural_name %>_path
